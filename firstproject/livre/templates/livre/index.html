@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Accueil - Bibliothèque</title>
+</head>
+<body>
+<h1>Bienvenue dans ma bibliothèque</h1>
+<h2><a href="/livre/formulaire/">Ajouter un livre</a></h2>
+<ol>
+  {% for l in livre %}
+    <li> {{l}} <a href="/livre/affiche/{{l.id}}/">(Détails)</a></li>
+  {% endfor %}
+</ol>
+</body>
+</html>

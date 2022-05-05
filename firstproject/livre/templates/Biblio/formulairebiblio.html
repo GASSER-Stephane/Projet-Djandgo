@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang=fr>
+<head>
+<meta charset="UTF-8">
+<title>Formulaire - Ajouter une bibliothèque</title>
+</head>
+<body>
+    <h1>Saisie d'une nouvelle bibliothèque</h1>
+        {% if id == none %}
+             <form method="post" action="/livre/traitementbiblio/">
+         {% else %}
+                <form method="post" action="/livre/updatetraitement/{{id}}/">
+         {% endif %}
+        {% csrf_token %}
+        {{ form.as_ul }}
+        <input type="submit" value="Ajouter la bibliothèque"\>
+    </form>
+</body>
+</html>
