@@ -1,5 +1,5 @@
 from django.http import HttpResponseRedirect
-from .forms import LivreForm, BiblioForm
+from .forms import LivreForm, BiblioForm, LivreDirectForm
 from django.shortcuts import render
 from . import models
 
@@ -81,7 +81,8 @@ def traitementbiblio(request):
 
 def affichebiblio(request, id):
     Biblio =models.Biblio.objects.get(pk=id)
-    return render(request,"Biblio/affichebiblio.html",{"biblio": Biblio})
+    liste=list(models.Livre.objects.filter(bibliotheque_id=id))
+    return render(request,"Biblio/affichebiblio.html",{"biblio": Biblio, "liste": liste})
 
 def deletebiblio(request, id):
     biblio = models.Biblio.objects.get(pk=id)
@@ -103,4 +104,23 @@ def updatetraitementbiblio(request, id):
         bibli.save()
         return HttpResponseRedirect("/livre/accueil")
     else:
-        return render(request, "livre/formulairebiblio.html",{"form" : lform, "id": id})
+        return render(request, "Biblio/formulairebiblio.html",{"form" : lform, "id": id})
+
+
+
+def formulairedirect(request, id):
+
+        form = LivreDirectForm()
+        return render(request, 'livre/livredansbiblio.html', {'form': form, "id":id})
+
+
+def traitementdirect(request, id):
+    if request.method == "POST":
+        pForm = LivreDirectForm(request.POST)
+        if pForm.is_valid():
+            livre = pForm.save(commit=False)
+            livre.bibliotheque_id = id
+            livre.bibliotheque = models.Biblio.objects.get(pk=id)
+            return render(request, 'livre/traitementdirect.html', {'livre': livre})
+        else:
+            return render(request, 'livre/livredansbiblio.html', {'form': pForm})

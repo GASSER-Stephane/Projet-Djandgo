@@ -9,7 +9,7 @@
         {% if id == none %}
              <form method="post" action="/livre/traitementbiblio/">
          {% else %}
-                <form method="post" action="/livre/updatetraitement/{{id}}/">
+                <form method="post" action="/livre/updatetraitementbiblio/{{id}}/">
          {% endif %}
         {% csrf_token %}
         {{ form.as_ul }}

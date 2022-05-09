@@ -4,7 +4,9 @@ from . import views
 
 urlpatterns = [
     path('formulaire/', views.formulaire, name='formulaire'),
+    path('formulairedirect/<int:id>/', views.formulairedirect, name='formulairedirect'),
     path('traitement/', views.traitement),
+    path('traitementdirect/<int:id>', views.traitementdirect),
     path('affiche/<int:id>/',views.affiche),
     path('update/<int:id>/', views.update),
     path('delete/<int:id>/', views.delete),

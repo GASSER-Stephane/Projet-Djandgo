@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang=fr>
+<head>
+<meta charset="UTF-8">
+<title>Formulaire - Ajouter un livre</title>
+</head>
+<body>
+    <h1>Saisie d'un nouveau livre</h1>
+
+             <form method="post" action="/livre/traitementdirect/{{id}}">
+
+        {% csrf_token %}
+        {{ form.as_ul }}
+        <input type="submit" value="Envoyer les données"\>
+    </form>
+</body>
+</html>
