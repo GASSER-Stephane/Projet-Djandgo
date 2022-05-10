@@ -33,7 +33,7 @@ class BiblioForm(ModelForm):
 
 class LivreDirectForm(ModelForm):
     class Meta:
-        model = models.LivreDirect
+        model = models.Livre
 #        fields = ('titre', 'auteur', 'date_parution', 'nombres_pages','resume')
         fields = ('titre', 'auteur','nombres_pages','resume')
 

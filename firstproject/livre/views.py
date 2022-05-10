@@ -14,6 +14,7 @@ def formulaire(request):
         form = LivreForm()
         return render(request, 'livre/formulaire.html', {'form': form})
 
+
 def traitement(request):
     if request.method == "POST":
         pForm = LivreForm(request.POST)
@@ -23,18 +24,22 @@ def traitement(request):
         else:
             return render(request, 'livre/formulaire.html', {'form': pForm})
 
+
 def affiche(request, id):
     livre =models.Livre.objects.get(pk=id)
     return render(request,"livre/affiche.html",{"livre": livre})
+
 
 def index(request):
     liste=list(models.Livre.objects.all())
     return render(request, "livre/index.html",{"livre": liste})
 
+
 def update(request, id):
     livre=models.Livre.objects.get(pk=id)
     form = LivreForm(livre.dico())
     return render(request, "livre/formulaire.html",{"form":form, "id": id})
+
 
 def updatetraitement(request, id):
     lform = LivreForm(request.POST)
@@ -46,6 +51,7 @@ def updatetraitement(request, id):
     else:
         return render(request, "livre/formulaire.html",{"form" : lform, "id": id})
 
+
 def delete(request, id):
     livre = models.Livre.objects.get(pk=id)
     livre.delete()
@@ -54,9 +60,11 @@ def delete(request, id):
 
 
 
+
 def accueil(request):
     biblio=list(models.Biblio.objects.all())
     return render(request, "Biblio/accueil.html",{"biblio": biblio})
+
 
 def formulairebiblio(request):
     if request.method == "POST":
@@ -79,10 +87,12 @@ def traitementbiblio(request):
         else:
             return render(request, 'Biblio/formulairebiblio.html', {'form': pForm})
 
+
 def affichebiblio(request, id):
     Biblio =models.Biblio.objects.get(pk=id)
     liste=list(models.Livre.objects.filter(bibliotheque_id=id))
     return render(request,"Biblio/affichebiblio.html",{"biblio": Biblio, "liste": liste})
+
 
 def deletebiblio(request, id):
     biblio = models.Biblio.objects.get(pk=id)
@@ -90,11 +100,11 @@ def deletebiblio(request, id):
     return HttpResponseRedirect("/livre/accueil")
 
 
-
 def updatebiblio(request, id):
     biblio=models.Biblio.objects.get(pk=id)
     form = BiblioForm(biblio.dico())
     return render(request, "Biblio/formulairebiblio.html",{"form":form, "id": id})
+
 
 def updatetraitementbiblio(request, id):
     lform = BiblioForm(request.POST)
@@ -108,8 +118,9 @@ def updatetraitementbiblio(request, id):
 
 
 
-def formulairedirect(request, id):
 
+
+def formulairedirect(request, id):
         form = LivreDirectForm()
         return render(request, 'livre/livredansbiblio.html', {'form': form, "id":id})
 
@@ -121,6 +132,7 @@ def traitementdirect(request, id):
             livre = pForm.save(commit=False)
             livre.bibliotheque_id = id
             livre.bibliotheque = models.Biblio.objects.get(pk=id)
-            return render(request, 'livre/traitementdirect.html', {'livre': livre})
+            livre.save()
+            return render(request, 'livre/traitementdirect.html', {'livre': livre, "id":id})
         else:
-            return render(request, 'livre/livredansbiblio.html', {'form': pForm})
+            return render(request, 'livre/livredansbiblio.html', {'form': pForm, "id":id})

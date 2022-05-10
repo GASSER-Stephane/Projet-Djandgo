@@ -32,15 +32,3 @@ class Biblio(models.Model):
         return {"nom":self.nom, "ville": self.ville, "nombre_livre":self.nombre_livre, "region":self.region}
 
 
-
-
-class LivreDirect(models.Model):
-    titre = models.CharField(max_length=100)
-    auteur = models.CharField(max_length = 100)
-    #date_parution = models.DateField(blank=True, null=True)
-    nombres_pages = models.IntegerField(blank=False)
-    resume = models.TextField(null = True, blank = True)
-
-    def __str__(self):
-        chaine = f"Titre : {self.titre} | Auteur : {self.auteur}"
-        return chaine
