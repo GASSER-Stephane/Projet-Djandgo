@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'index.css' %}">
+    <meta charset="UTF-8">
+    <title>{%  block title %}Accueil - TaupeAchat {% endblock %}</title>
+</head>
+
+<header>
+    <nav>
+        <a href="/taupeachat/accueil/"> Accueil</a>
+        <a href="/taupeachat/ajoutsadmin/">Ajouts</a>
+    </nav>
+</header>
+
+{% block content %}
+<body class="accueil">
+<br><br>
+    <p class="titreajouts">Bienvenue sur TaupeAchat</p>
+ <p class="presentationajouts">
+Bienvenue sur TaupeAchat ! Le premier site d'équipements informatiques ! Vous trouvez
+dessus une large proposition d'équipements, à prix défiant toutes concurences !
+     <br></p>
+
+<img src="{%  static 'rene.jpg' %}" alt="PROBLEME">
+<br><br><br>
+<div id="contenu">
+    <section class="BoxListeCat">
+        <p class="titreliste"><a href="/taupeachat/listecatego/">Catégories équipements</a></p>
+    </section>
+    <section class="BoxListeEqui">
+        <p class="titreliste"><a href="/taupeachat/accueilequipe/">Nos équipements (Liste complète)</a></p>
+    </section>
+<br></h3>
+
+
+</body>
+{% endblock %}
+</html>

@@ -1,0 +1,31 @@
+{% extends "listeequipements/accueilliste.html" %}
+{% block title %}Affiche - TaupeAchat{% endblock %}
+
+{% block content %}
+<body>
+<div id="contenu">
+    <section class="BoxAffiche">
+<h2>Paramètres avancés d'un équipement</h2>
+<p>TaupeAchat dispose désormais de l'{{equipementok.typeobjet}} {{equipementok.marques}} {{equipementok.modeles}} !  <a href="/taupeachat/updateequipe/{{equipementok.id}}/">(Edit)</a> <a href="/taupeachat/deleteequipe/{{equipementok.id}}/">(Delete)</a></p>
+    </section>
+
+<br><br><br><br>
+</div>
+</body>
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

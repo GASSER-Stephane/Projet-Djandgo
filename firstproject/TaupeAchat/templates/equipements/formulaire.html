@@ -1,0 +1,21 @@
+{% extends "listeequipements/accueilliste.html" %}
+{% block title %}Formulaire - TaupeAchat{% endblock %}
+
+{% block content %}
+<body>
+<section class="BoxAffiche">
+    <p class="titreforms">Ajout d'un nouvel equipement</p>
+</section>
+<body>
+    <div class="contenantforms">
+        {% if id == none %}
+             <form method="post" action="/taupeachat/traitementequipe/">
+         {% else %}
+                <form method="post" action="/taupeachat/updatetraitementequipe/{{id}}/">
+         {% endif %}
+        {{ form.as_ul }}
+        {% csrf_token %}
+        <input type="submit" value="Envoyer les données"\>
+    </form>
+</body>
+{% endblock %}

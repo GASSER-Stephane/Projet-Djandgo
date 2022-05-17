@@ -1,0 +1,13 @@
+{% extends "listeequipements/accueilliste.html" %}
+{% block title %}Formulaire - TaupeAchat{% endblock %}
+
+{% block content %}
+<body>
+<div id="contenu">
+<section class="BoxAffiche">
+<h2>L'équipement a été ajouté avec succès.</h2>
+<p>TaupeAchat possède désormais une {{equipmnt.marques}} {{equipmnt.modeles}}. L'équipement pèse {{equipmnt.poids}}g et coûte {{ equipmnt.prix}}€ ! Il s'agit d'un équipement de type "{{equipmnt.typeobjet}}". Vous pouvez retourner à l'accueil</p>
+</section>
+</div>
+</body>
+{% endblock %}

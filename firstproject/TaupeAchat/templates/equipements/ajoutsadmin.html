@@ -1,0 +1,28 @@
+{% extends "listeequipements/accueilliste.html" %}
+{% block title %}Ajouts - TaupeAchat{% endblock %}
+
+{% block content %}
+<body>
+<div id="contenu">
+<section class="contenant">
+    <p class="titreajouts">Gestion de stock (Ajouts)</p>
+    <p class="presentationajouts">Bienvenue sur la partie "Ajouts" du site web TaupeAchat ! Vous trouverez ici
+        la possibilité d'ajouter, de maintenir et de mettre à jour le stock de vente du site ! </p>
+    <section class="BoxAjoutsEquipe">
+        <p class="texteajouts"><a href="/taupeachat/formulaire/">Ajouter une catégorie d'équipement</a></p>
+    </section>
+    <section class="BoxAjoutsCategorie">
+        <p class="texteajouts"><a href="/taupeachat/formulaireequipe/">Ajouter un equipement</a></p>
+    </section></section>
+
+<section class="contenant">
+    <p class="titreajouts">Ajouts avancés</p>
+    <h3><li>Ajouter un équipement dans la catégorie suivante</li></h3>
+    {% for l in listetypeequipe %}
+    <li> {{l}} <a href="/taupeachat/formulairedirect/{{l.id}}/">(Clique ici)</a></li>
+    {% endfor %}
+</section>
+</div>
+</body>
+
+{% endblock %}

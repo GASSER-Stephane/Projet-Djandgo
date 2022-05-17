@@ -1,0 +1,21 @@
+{% extends "listeequipements/accueilliste.html" %}
+{% block title %}Affiche - TaupeAchat{% endblock %}
+
+{% block content %}
+<body>
+<div id="contenu">
+    <section class="BoxAffiche">
+<h2>Paramètres avancés d'une catégorie</h2>
+<p>TaupeAchat propose désormais des "{{equipement.nom}}" à la vente ! Vous pouvez vous en procurer parmis les modèles disponibles ci-dessous !  <a href="/taupeachat/update/{{equipement.id}}/">(Edit)</a> <a href="/taupeachat/delete/{{equipement.id}}/">(Delete)</a></p>
+    </section>
+
+<br><br><br><br>
+    <section class="BoxAfficheListe">
+<p class="texteafficheliste">Voici les différents modèles de {{equipement.nom}} disponibles...</p>
+  {% for l in liste %}
+    <li> {{l}} <a href="/taupeachat/updateequipe/{{l.id}}/">(Edit)</a> <a href="/taupeachat/deleteequipe/{{l.id}}/">(Delete)</a></li>
+  {% endfor %}
+    </section>
+</div>
+</body>
+{%  endblock %}

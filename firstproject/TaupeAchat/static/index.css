@@ -1,0 +1,243 @@
+
+
+header{
+	width: 101.5%;
+	padding-right: 7px;
+	padding-top: 20.5px;
+	margin-top: -8px;
+	margin-left: -1.5%;
+	text-align: center;
+	background-color: #717171;
+	padding-bottom: 30px;
+}
+
+
+section
+{
+	margin-bottom: 25px;
+    display: inline-block;
+    vertical-align: top;
+    width: 48%;
+	margin-left: 1%;
+	border: 1px solid;
+	border-color: white;
+    box-shadow: 3px 5px 12px black;
+}
+#contenu
+{
+	display: inline-block;
+    width: 95%;
+	margin-left: 1.5%;
+    vertical-align: top;
+    margin-top: 1%;
+
+}
+
+li{
+	list-style-type: none;
+	font-size: 150%;
+	margin-left: 20px;
+}
+
+.BoxAjoutsEquipe{
+	width: 48%;
+	margin-bottom: 30px;
+	min-height: 10px;
+	border: none;
+	background-color: lightgray;
+}
+
+.BoxAjoutsCategorie{
+	width: 48%;
+	margin-bottom: 30px;
+	min-height: 10px;
+	border: none;
+	background-color: lightgray;
+}
+
+.BoxAffiche{
+	width: 98%;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	min-height: 10px;
+	border: none;
+	background-color: white;
+}
+
+.BoxAfficheListe{
+	width: 100%;
+	margin-bottom: 30px;
+	padding-bottom: 20px;
+	padding-left: 15px;
+	min-height: 10px;
+	border: none;
+	background-color: lightgray;
+}
+
+input, select{
+	float:right;
+	margin-right:5%;
+	font-size:175%;
+	min-width: 125px;
+	margin-bottom:5px;
+}
+
+li{
+	text-align: left;
+}
+
+p.titreforms{
+	font-size:250%;
+	font-weight: bold;
+	text-align: center;
+}
+
+
+.contenantforms{
+	margin-top: 5%;
+	margin-left: 30%;
+	font-size:150%;
+	width:50%;
+}
+
+.BoxAfficheCat{
+	width: 100%;
+	margin-bottom: 30px;
+	padding-bottom: 20px;
+	padding-left: 15px;
+	border: none;
+	background-color: lightgray;
+}
+.BoxAfficheEquipe{
+	width: 100%;
+	margin-bottom: 30px;
+	padding-bottom: 20px;
+	padding-left: 15px;
+	min-height: 10px;
+	border: none;
+	background-color: lightgray;
+}
+
+.contenant{
+	width: 100%;
+	padding-right: 8px;
+	padding-bottom: 50px;
+	margin-bottom: 30px;
+	padding-top: 20px;
+	background-color: #B9B9B9;
+}
+
+.texteafficheliste{
+	text-align: center;
+	margin-bottom: 40px;
+	font-size:200%;
+	font-weight: bold;
+}
+
+p.texteajouts{
+	text-align: center;
+	margin-bottom: 40px;
+	font-size:150%;
+}
+
+p.titreajouts{
+	text-align: center;
+	margin-bottom: 40px;
+	font-size:250%;
+	font-weight: bold;
+}
+p.presentationajouts{
+	margin-bottom: 40px;
+	font-size:150%;
+	text-align: center;
+}
+
+p.titreliste{
+	text-align: center;
+	padding-top: 8px;
+	font-size:150%;
+}
+
+body{
+	background-color: #e6e6e6;
+}
+
+
+
+img{
+	margin-left:38%
+}
+
+.BoxListeCat{
+	width: 48%;
+	text-align: center;
+	margin-bottom: 30px;
+	min-height: 100px;
+	border: none;
+}
+
+/* Page Passion (Jeux) */
+
+table{
+	margin-top: 50px;
+}
+
+.center{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.titre{
+	padding-left:100px;
+		font-size: 105%;
+	font-weight: bold;
+}
+
+th{
+	padding-left:100px;
+		font-size: 105%;
+	font-weight: normal;
+}
+tr{
+		font-weight: bold;
+	text-align: center;
+	font-size: 225%;
+}
+
+.BoxListeEqui{
+	text-align: center;
+	width: 48%;
+	margin-bottom: 30px;
+	min-height: 100px;
+	border: none;
+}
+
+/* Barre de navigation */
+
+a{
+	color: blue;
+	text-decoration: none;
+}
+
+nav a:hover{
+    color: white;
+	font-size: 155%;
+    border-bottom: 4px solid white;
+}
+
+nav {
+    display: table;
+    width : 80%;
+	margin-left: 10%
+}
+
+nav > a {
+    text-decoration: none;
+	font-size: 150%;
+    display: table-cell;
+    width : 33%;
+    text-align: center;
+    border: 5px;
+	color: white;
+
+}

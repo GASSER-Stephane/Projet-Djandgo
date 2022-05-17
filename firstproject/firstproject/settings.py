@@ -33,6 +33,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'myfirstapp.apps.MyfirstappConfig',
     'livre.apps.LivreConfig',
+    'TaupeAchat.apps.TaupeAchatConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

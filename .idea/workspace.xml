@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bfd81b81-eab5-4bb1-b590-b179df972627" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/firstproject/TaupeAchat/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/firstproject/TaupeAchat/templates/equipements/accueil.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/firstproject/TaupeAchat/templates/equipements/formulaire.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/firstproject/TaupeAchat/templates/equipements/traitement.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/firstproject/TaupeAchat/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/pythonProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pythonProject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/firstproject/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/firstproject/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/firstproject/firstproject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/firstproject/firstproject/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/firstproject/firstproject/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/firstproject/firstproject/urls.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/firstproject/TaupeAchat/forms.py" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="291e1hl42fuuWk02wIXGIu8UqrT" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Elève/Desktop/pythonProject/firstproject/TaupeAchat/templates/equipements&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Elève\Desktop\pythonProject\firstproject\TaupeAchat\templates\equipements" />
+      <recent name="C:\Users\Elève\Desktop\pythonProject\firstproject\TaupeAchat\migrations" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Elève\Desktop\pythonProject\firstproject\TaupeAchat\static" />
+      <recent name="C:\Users\Elève\Desktop\pythonProject\firstproject\TaupeAchat\templates\listeequipements\csstest" />
+      <recent name="C:\Users\Elève\Desktop\pythonProject\firstproject\TaupeAchat\templates\listeequipements" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bfd81b81-eab5-4bb1-b590-b179df972627" name="Changes" comment="" />
+      <created>1652284809207</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1652284809207</updated>
+      <workItem from="1652284820465" duration="11996000" />
+      <workItem from="1652369471049" duration="18119000" />
+      <workItem from="1652558280294" duration="7458000" />
+      <workItem from="1652642492252" duration="3786000" />
+      <workItem from="1652716748855" duration="21533000" />
+      <workItem from="1652744165875" duration="79000" />
+      <workItem from="1652783845399" duration="10689000" />
+      <workItem from="1652794724423" duration="619000" />
+      <workItem from="1652795449301" duration="4353000" />
+      <workItem from="1652802971777" duration="181000" />
+      <workItem from="1652803210721" duration="116000" />
+      <workItem from="1652803578909" duration="883000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="false" />
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_COMMIT_MESSAGE" value="" />
+  </component>
+</project>

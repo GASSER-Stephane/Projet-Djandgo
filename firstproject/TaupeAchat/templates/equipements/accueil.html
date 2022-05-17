@@ -1,0 +1,24 @@
+{% extends "listeequipements/accueilliste.html" %}
+{% block title %}Equipements - TaupeAchat{% endblock %}
+
+{% block content %}
+ <table class='center'>
+     <section class="BoxAffiche">
+
+<p class="titreliste">Bienvenue sur la liste des équipements que propose TaupeAchat !</p>
+    </section>
+  <tr>
+    <th class="titre">Nos équipements</th>
+  </tr>
+  {% for l in listeequipe %}
+        <tr>
+      <th scope="row">{{l}} <a href="/taupeachat/afficheequipe/{{l.id}}/">(Détails)</a></th><br></th>
+    </tr>
+
+ {% endfor %}
+</table>
+<br><br><br>
+
+</div>
+</body>
+{% endblock %}
